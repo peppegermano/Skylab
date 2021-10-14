@@ -1,0 +1,84 @@
+<html>
+	<title> TEST-J1-2 </title>
+	<head>
+		<style>
+			.container{
+				position: absolute;
+				top:0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			.sub-container{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 80%;
+				height: 80%;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 0px;
+			}
+			.arrow-up {
+				width: 0; 
+				height: 0; 
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				gap: 0px
+				border-bottom: 5px solid black;
+			}
+			.container div.target-container:after {
+				position:absolute;
+				content: "";
+				display: none;
+				width: 15px;
+				height: 15px;
+				border-style: solid;
+				border-color: #ffc9d6;
+				background-color: transparent;
+			}
+			.container:hover .sub-container div:after{
+				display: inline-block;
+			}
+			.corner-up-left:after{
+				top: 0px;
+				left: 0px;
+				border-width: 1px 0px 0px 1px;
+			}
+			.corner-up-rigth:after{
+				top: 0px;
+				right: 0px;
+				border-width: 1px 1px 0px 0px;
+			}
+			.corner-down-left:after{
+				bottom: 0px;
+				left: 0px;
+				border-width: 0px 0px 1px 1px;
+			}
+			.corner-down-rigth:after{
+				bottom: 0px;
+				right: 0px;
+				border-width: 0px 1px 1px 0px;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<div class="container">
+			<div class="sub-container">
+				<div class="target-container corner-up-left"></div>
+				<div class="target-container corner-up-rigth"></div>
+				<div class="target-container corner-down-left"></div>
+				<div class="target-container corner-down-rigth"></div>
+			</div>
+		</div>
+	
+	</body>
+</html>
