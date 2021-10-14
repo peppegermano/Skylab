@@ -1,0 +1,36 @@
+<html>
+	<title> TEST-J1-3 </title>
+	<head>
+		<style>
+			.specialChildren{
+				color: red;
+			}
+			.active{
+				color: black;
+			}
+		</style>
+		
+		<script src="main.js"></script>
+	</head>
+	<body>
+	
+		<div class="specialDiv">
+			<div class="specialChildren" data-specialvalue="first-children DIV1"> first-children DIV1 (Primo figlio "specialChildren" con "data-specialvalue" ) </div>
+			<div class=""> second-children DIV1 (Secondo figlio non "specialChildren")</div>
+			<div class="active"> Cliccando questo DIV1 passo da classe "active" a "specialChildren"</div>
+		</div>
+		<br>
+		<div class="specialDiv">
+			<div class="specialChildren"> first-children DIV2 (Primo figlio "specialChildren" senza "data-specialvalue" ) </div>
+			<div class=""> second-children DIV2 (Secondo figlio non "specialChildren")</div>
+			<div class="active"> Cliccando questo DIV2 passo da classe "active" a "specialChildren"</div>
+		</div>
+		<br>
+		<div class="specialDiv">
+			<div class="specialChildren" data-specialvalue="first-children DIV3"> first-children DIV3 (Primo figlio "specialChildren" con "data-specialvalue" ) </div>
+			<div class=""> second-children DIV3 (Secondo figlio non "specialChildren")</div>
+			<div class="active"> Cliccando questo DIV3 passo da classe "active" a "specialChildren"</div>
+		</div>
+	
+	</body>
+</html>
